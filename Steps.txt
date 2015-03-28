@@ -1,0 +1,37 @@
+- Unit
+> Functional unit classes
+	- Knight
+	- Marksman
+	- Priest
+	- Icebinder
+- board
+- board of proper proportions
+- Attack & Block System
+- Movement System
+- attack mapping
+- movement mapping
+> recovery
+- team systems
+> set importation
+	> from file
+	- from manual arrays
+- command driving
+- turn system
+- game win conditions
+> full game playable
+> other units 
+	>Assassin
+	>Hag
+	>Mesmer
+	>Armorsmith
+	>Earthwarper
+	>Firebender
+	>Archdruid
+	>Sparkmage
+	>Dragon
+	>Ivysprite
+	>Blade Hulk
+	>Wolflancer
+	>Vine Hydra
+	>Windrath
+	>Artifacts
