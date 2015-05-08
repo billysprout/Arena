@@ -36,6 +36,7 @@ public:
 	//virtual functions
 	Unit();
 	virtual void damage(Unit * attacker);
+	virtual bool block(int side);
 	virtual bool block(int side, int atkType);
 	virtual void printAll();
 	virtual int getHP();

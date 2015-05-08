@@ -56,7 +56,7 @@ bool Board::commandIn()
 			cout << ">ATTACK: Select Attacker.\n";
 			int x = grabXCoord(), y = grabYCoord();
 			Unit * focus = fetchUnitAt(x,y);
-			if (focus->_recoveringFor == 0)
+			//if (focus->_recoveringFor == 0)
 			{
 				if (focus->isAssigned())
 				{
@@ -78,12 +78,12 @@ bool Board::commandIn()
 					}
 				}
 
-				else
-					cout << ">ATTACK: Invalid target. Restarting loop.\n";
+				//else
+				//	cout << ">ATTACK: Invalid target. Restarting loop.\n";
 			}
-			else
+			//else
 			{
-				cout << ">ATTACK: Unit is still recovering. Restarting loop.\n";
+			//	cout << ">ATTACK: Unit is still recovering. Restarting loop.\n";
 			}
 			return true;
 		}
@@ -128,7 +128,7 @@ bool Board::commandIn()
 			cout << ">INFO: Select a unit to display.\n";
 			int x = grabXCoord(), y = grabYCoord();
 			Unit *focus = fetchUnitAt(x, y);
-			if (focus->_class != "Unassigned");
+			if (focus->_class != "Unassigned")
 				focus->printAll();
 		}
 		else if (input == "help")
@@ -163,6 +163,7 @@ void Board::toString()
 		cout << i << "|";
 		for (int j = 0; j < _dimensions; j++)
 		{
+			
 			str = this->_array[i][j]->toString();
 			cout << str << "|";
 		}
@@ -215,7 +216,7 @@ void Board::drawRange(Unit * unit, string str = "atk")
 Unit * Board::fetchUnitAt(int x, int y)
 {	
 	Unit * selected = _array[x][y];
-	cout << "Selected " << selected->_name << " the " << selected->_class << " from team " << selected->_team << ".\n";
+	//cout << "Selected " << selected->_name << " the " << selected->_class << " from team " << selected->_team << ".\n";
 	return selected;
 }
 void Board::moveUnit(Unit * unit, int x, int y)
@@ -454,6 +455,7 @@ void Board::buildaBoard()
 	y1[0] = 3;
 	y1[1] = 3;
 	y1[2] = 3;
+	
 	y1[3] = 0;
 	y1[4] = 2;
 	y1[5] = 2;
@@ -481,8 +483,8 @@ void Board::buildaBoard()
 	x0[5] = 1; // mm 1
 	x0[6] = 2; // mm 2
 	x0[7] = 8; // hag 1
-	x0[8] = 5; // frosty 1
-	x0[9] = 10;// frosty 2
+	x0[8] = 4; // frosty 1
+	x0[9] = 6;// frosty 2
 
 	y0[0] = 8;
 	y0[1] = 8;
@@ -493,9 +495,10 @@ void Board::buildaBoard()
 	y0[6] = 8;
 	y0[7] = 8;
 	y0[8] = 9;
-	y0[9] = 10;
-
+	y0[9] = 9;
+	
 	populateFromArray(units0, x0, y0);
 	populateFromArray(units1, x1, y1);
 	cout << "Board imported. Have fun!\n";
+
 }

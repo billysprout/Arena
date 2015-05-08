@@ -1,13 +1,21 @@
-﻿Build started 3/28/2015 1:46:07 AM.
-     1>Project "C:\Users\Billy\Dropbox\Website\Arena\C++\Arena\Arena\Arena.vcxproj" on node 2 (Build target(s)).
+﻿Build started 4/29/2015 6:54:19 PM.
+     1>Project "C:\Users\Billy\Dropbox\Projects\Arena\C++\Arena\Arena\Arena.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Classes\Board.cpp Classes\Main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Classes\Assassin.cpp Classes\Board.cpp Classes\Edge.cpp Classes\Frostbinder.cpp Classes\Knight.cpp Classes\Main.cpp Classes\Marksman.cpp Classes\Priest.cpp Classes\Hag.cpp Classes\Unit.cpp
+         Unit.cpp
+         Hag.cpp
+         Priest.cpp
+         Marksman.cpp
          Main.cpp
+         Knight.cpp
+         Frostbinder.cpp
+         Edge.cpp
          Board.cpp
      1>Classes\Board.cpp(132): warning C4390: ';' : empty controlled statement found; is this the intent?
+         Assassin.cpp
          Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Billy\Dropbox\Website\Arena\C++\Arena\Debug\Arena.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Billy\Dropbox\Website\Arena\C++\Arena\Debug\Arena.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Billy\Dropbox\Website\Arena\C++\Arena\Debug\Arena.lib" /MACHINE:X86 Debug\Assassin.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Billy\Dropbox\Projects\Arena\C++\Arena\Debug\Arena.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Billy\Dropbox\Projects\Arena\C++\Arena\Debug\Arena.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Billy\Dropbox\Projects\Arena\C++\Arena\Debug\Arena.lib" /MACHINE:X86 Debug\Assassin.obj
          Debug\Board.obj
          Debug\Edge.obj
          Debug\Frostbinder.obj
@@ -17,9 +25,17 @@
          Debug\Priest.obj
          Debug\Hag.obj
          Debug\Unit.obj
-         Arena.vcxproj -> C:\Users\Billy\Dropbox\Website\Arena\C++\Arena\Debug\Arena.exe
-     1>Done Building Project "C:\Users\Billy\Dropbox\Website\Arena\C++\Arena\Arena\Arena.vcxproj" (Build target(s)).
+     1>Marksman.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>Priest.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>Hag.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>Unit.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>Assassin.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>Edge.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>Frostbinder.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>Knight.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall Unit::block(int)" (?block@Unit@@UAE_NH@Z)
+     1>C:\Users\Billy\Dropbox\Projects\Arena\C++\Arena\Debug\Arena.exe : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\Users\Billy\Dropbox\Projects\Arena\C++\Arena\Arena\Arena.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.41
+Time Elapsed 00:00:04.02

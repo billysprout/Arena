@@ -24,7 +24,7 @@ void Priest::target(Board *b)
 {
 	int k = b->_dimensions;
 	//cycle through all units and heal them if their team is his
-	if (_recoveringFor != 0)
+	//if (_recoveringFor != 0)
 	{
 		for (int i = 0; i < k; i++)
 		{
@@ -48,7 +48,8 @@ void Priest::target(Board *b)
 		}
 		_recoveringFor += 4;
 	}
-	else
+/*	else
 		cout << ">ATTACK: " << _name << " is still recovering.\n";
 	_recoveringFor += (_recovery - 1);
+	*/
 }
